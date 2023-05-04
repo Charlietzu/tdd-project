@@ -10,10 +10,7 @@ MAX_WAIT = 5
 class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
-        #Precisei mudar a forma como acessamos o Firefox, o código fornecido nas aulas não funcionou aqui
-        options = Options()
-        options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
-        self.browser = webdriver.Firefox(executable_path=r'./geckodriver.exe', options=options)
+        self.browser = webdriver.Firefox()
 
     def tearDown(self):  
         self.browser.quit()
