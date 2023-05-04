@@ -4,13 +4,16 @@ import unittest
 
 class NewVisitorTest(unittest.TestCase):
 
-    def test_can_start_a_list_and_retrieve_it_later(self): 
-    
+    def setUp(self):
         #Precisei mudar a forma como acessamos o Firefox, o código fornecido nas aulas não funcionou aqui
         options = Options()
         options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
         self.browser = webdriver.Firefox(executable_path=r'./geckodriver.exe', options=options)
-    
+
+    def tearDown(self):  
+        self.browser.quit()
+
+    def test_can_start_a_list_and_retrieve_it_later(self): 
         # Maria decidiu utilizar o novo app TODO. Ela entra em sua página principal:
         self.browser.get('http://localhost:8000')
 
