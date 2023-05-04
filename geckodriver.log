@@ -3140,3 +3140,5 @@ JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error:
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 1683206536306	geckodriver	INFO	Listening on 127.0.0.1:56358
+1683207744481	geckodriver	INFO	Listening on 127.0.0.1:56678
+1683207747578	geckodriver	INFO	Listening on 127.0.0.1:56687
